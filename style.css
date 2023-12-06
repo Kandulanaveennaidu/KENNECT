@@ -1,0 +1,88 @@
+/* Header Styles */
+.header {
+  text-align: center;
+  padding: 20px 0;
+  background: #006633;
+}
+
+.header h1 {
+  font-size: 38px;
+  color: rgb(239, 239, 50);
+  padding: 12px;
+  margin: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+  padding: 10px 0;
+  background: #d4fcd4;
+}
+
+/* Data Container */
+.data-container {
+  width: 95%;
+  max-width: 1200px; /* Adjust the max-width as needed */
+  height: 330px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Bar Styles with Animation */
+.bar {
+  width: 15px;
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(135, 156, 234);
+  transition: height 0.5s ease; /* Adding an animation to the bar */
+}
+
+/* Bar ID */
+.bar__id {
+  position: absolute;
+  top: -24px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Reset Button */
+.reset {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+}
+
+.reset:hover {
+  transform: scale(1.1); /* Increase the size on hover */
+}
+
+/* Body Styles */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Footer Styles */
+.footer {
+  margin-top: auto;
+  background-color: #d4fcd4;
+  color: black;
+  padding: 10px;
+}
+
+/* Footer End */
+.footerend {
+  text-align: center;
+  color: rgb(239, 239, 50);
+  background: #006633;
+  margin: 50px 0;
+  height: 50px;
+  line-height: 50px;
+}

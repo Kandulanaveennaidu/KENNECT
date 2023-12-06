@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kuwar's Response</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- link css file with html -->
+  </head>
+
+  <body>
+    <section class="header">
+      <h1>Comparison Sorting Algorithms</h1>
+    </section>
+
+    <section class="navbar">
+      <button onclick="generate()" id="Button1">Randomize Array</button>
+      <button onclick="insertionSort(),disable1()" id="Button3">
+        Insertion Sort
+      </button>
+      <button onclick="SelectionSort(),disable()" id="Button2">
+        Selection Sort
+      </button>
+      <button onclick="bubbleSort(),disable2()" id="Button4">
+        Bubble Sort
+      </button>
+      <button onclick="quickSort(),disable3()" id="Button5">Quick Sort</button>
+      <button onclick="mergeSort(),disable4()" id="Button6">Merge Sort</button>
+      <button onclick="shellSort(),disable5()" id="Button7">Shell Sort</button>
+      <button onclick="changeSize(0.5)">Change Size</button>
+    </section>
+
+    <section class="data-container"></section>
+
+    <div class="footer">
+      <button onclick="pauseResumeSort()">Pause/Resume</button>
+      <span id="speedLabel"></span>
+      <input
+        type="range"
+        min="1"
+        max="1000"
+        value="300"
+        id="speedSlider"
+        oninput="changeSpeed(this.value)"
+      />
+      <button onclick="stopSorting()" id="stopButton">STOP</button>
+
+      <label for="widthInput">Width:</label>
+      <input type="number" id="widthInput" placeholder="Enter width" />
+
+      <label for="heightInput">Height:</label>
+      <input type="number" id="heightInput" placeholder="Enter height" />
+
+      <button onclick="changeContainerSize()">Change Canvas Size</button>
+      <button class="reset" onclick="reset()" class="reset">RESET!!</button>
+    </div>
+  </body>
+  <div class="footerend">
+    <h2>Algorithms Visualizations</h2>
+  </div>
+  <script src="script.js"></script>
+  <!-- link js file with html -->
+  <script>
+    // Function to reset the page
+    function reset() {
+      window.location.reload();
+    }
+  </script>
+</html>
